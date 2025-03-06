@@ -120,7 +120,7 @@ private suspend fun getCenterpoints(files: List<File>): List<Vector> {
     for (file in files) {
         val image = ImageComponent(ImageIO.read(file))
         frame.add(image)
-        frame.title = file.name
+        frame.title = "${file.name} - image ${centerpoints.size + 1}/${files.size}"
 
         frame.pack()
 
