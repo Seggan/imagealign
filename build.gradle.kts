@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm")
+    kotlin("jvm") version "2.1.10"
 }
 
 group = "io.github.seggan"
